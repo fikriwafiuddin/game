@@ -3,7 +3,6 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 import Navbar from "../components/Navbar"
-import "./style.css"
 import { Link } from "react-router-dom"
 import { toast } from "react-toastify"
 

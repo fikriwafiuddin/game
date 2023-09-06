@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { toast } from "react-toastify"
 import axios from "axios"
-import "./style.css"
 
 export default function Register() {
   const [name, setName] = useState("")

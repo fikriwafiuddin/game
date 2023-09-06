@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
-import "./style.css"
 
 function Navbar(props) {
   const isLogin = props.isLogin

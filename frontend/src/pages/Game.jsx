@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import axios from "axios"
 import { useState, useEffect } from "react"
 import Navbar from "../components/Navbar"
@@ -37,7 +38,6 @@ function Game() {
     } else if (path.includes("multiplication")) {
       setOperator("x")
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   useEffect(() => {
     const countdownInterval = setInterval(async () => {
@@ -76,7 +76,6 @@ function Game() {
     return () => {
       clearInterval(countdownInterval)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [time])
 
   const user = async () => {
@@ -137,7 +136,6 @@ function Game() {
     const response = await fetchQuestion()
     if (response && response.numbers && response.options && response.result) {
       setNumbers(response.numbers)
-      // setQuestion(response)
       setOptions(response.options)
       setResult(response.result)
     }

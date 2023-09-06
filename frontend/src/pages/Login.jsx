@@ -2,7 +2,6 @@ import { Link, useNavigate } from "react-router-dom"
 import Button from "../components/Button"
 import axios from "axios"
 import { useState } from "react"
-import "./style.css"
 import { toast } from "react-toastify"
 
 function Login() {
@@ -60,7 +59,7 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <Button className="mb-10" text="Masuk" />
+          <Button text="Masuk" />
         </form>
         <p className="direct">
           <small>
